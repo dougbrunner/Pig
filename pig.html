@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel='stylesheet' type='text/css' href='style.css' media='screen'/>
+    <link rel='stylesheet' type='text/css' href='normalize.css' media='screen'/>
+		<title>Pig</title>
+	</head>
+	<body>
+    <main>
+      <div class="game-container">
+        <div class="player-form">
+          <h1>Let's Play Pig!</h1>
+          <form>
+            <label>How Many Players?</label>
+            <select>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+            <div id="players-button" class="button">Begin!</div>
+          </form>
+        </div>
+        <div class="game-board" hidden>
+          <div>
+            <h1>Rolls</h1>
+            <p id="roll-record">&nbsp;</p>
+          </div>
+          <div>
+            <h1>Round Total</h1>
+            <p id="round-total">&nbsp;</p>
+          </div>  
+        </div>
+        <div class="players-array"></div>
+        <div class="controls" hidden>
+          <div id='roll'class="button">Roll</div>
+          <div id='end_turn' class="button">End Turn</div>
+          <div id='start-over' class="button">Start Over</div>
+        </div>
+      </div>
+    </main>
+	</body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type='text/javascript' src='script.js'></script>
+</html>
